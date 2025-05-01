@@ -16,6 +16,7 @@ import(
 func main() {
 	rootDir, err := shellutils.Ls("/")
 	if err != nil {
+		fmt.Fprintf(os.Stderr, "shellutils.Ls: %v\n", err)
 		os.Exit(1)
 	}
 
