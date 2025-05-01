@@ -56,4 +56,39 @@ d usr/
 d var/
 ```
 
+
+Unit tests output:
+```bash
+$ go test -v
+=== RUN   TestLs
+    shellutils_test.go:42: L bin
+    shellutils_test.go:42: d boot/
+    shellutils_test.go:42: d cdrom/
+    shellutils_test.go:42: d dev/
+    shellutils_test.go:42: d etc/
+    shellutils_test.go:42: d home/
+    shellutils_test.go:42: L lib
+    shellutils_test.go:42: L lib32
+    shellutils_test.go:42: L lib64
+    shellutils_test.go:42: L libx32
+    shellutils_test.go:42: d lost+found/
+    shellutils_test.go:42: d media/
+    shellutils_test.go:42: d mnt/
+    shellutils_test.go:42: d opt/
+    shellutils_test.go:42: d proc/
+    shellutils_test.go:42: d root/
+    shellutils_test.go:42: d run/
+    shellutils_test.go:42: L sbin
+    shellutils_test.go:42: d snap/
+    shellutils_test.go:42: d srv/
+    shellutils_test.go:42: d sys/
+    shellutils_test.go:42: d tmp/
+    shellutils_test.go:42: d usr/
+    shellutils_test.go:42: d var/
+--- PASS: TestLs (0.00s)
+PASS
+ok      github.com/aspieunixgeek/shellutils     0.002s
+
+```
+
 ---
