@@ -1,15 +1,15 @@
-package shellutils
+package uptime
 
 import (
 	"testing"
 	"time"
 )
 
-func TestUptime(t *testing.T) {
+func TestNew(t *testing.T) {
 	now := time.Now()
-	u, err := Uptime()
+	u, err := New()
 	if err != nil {
-		t.Errorf("Uptime: %v\n", err)
+		t.Errorf("New: %v\n", err)
 	}
 
 	if u.CurTime != time.Now().Format("15:04:05") {
@@ -28,5 +28,5 @@ func TestUptime(t *testing.T) {
 			t.Fatalf("u.LoadAver[%d] == 0.0\n", i)
 		}
 	}
-	t.Logf("%v %v %v\n", u.CurTime, u.Label, u.LoadAver)
+	t.Logf("%v", u)
 }
