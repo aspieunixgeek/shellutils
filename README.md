@@ -1,11 +1,10 @@
 #### Unix-Shell utilities for Go
 
-- ls.List — List directory contents.
+---
 
-
-```go
-tmpDir, err := List("/tmp", []string{"-a"}) // Lists the contents of a directory with all hidden items
-```
+- [ls.List](./ls/ls.go) — List directory contents.
+- [uptime.New](/uptime/uptime.go) -  Tell how long the system has been running.
 
 ---
+
 
